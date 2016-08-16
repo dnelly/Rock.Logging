@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rock.Logging", "Rock.Loggin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rock.Logging.IntegrationTests", "Rock.Logging.IntegrationTests\Rock.Logging.IntegrationTests.csproj", "{6D23C692-2182-4606-9178-457CCB31B61B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rock.Logging.Moq", "Rock.Logging.Moq\Rock.Logging.Moq.csproj", "{EF60F2B3-F9E5-47EF-9E1A-5C7EFC102EAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6D23C692-2182-4606-9178-457CCB31B61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D23C692-2182-4606-9178-457CCB31B61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D23C692-2182-4606-9178-457CCB31B61B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF60F2B3-F9E5-47EF-9E1A-5C7EFC102EAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF60F2B3-F9E5-47EF-9E1A-5C7EFC102EAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF60F2B3-F9E5-47EF-9E1A-5C7EFC102EAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF60F2B3-F9E5-47EF-9E1A-5C7EFC102EAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

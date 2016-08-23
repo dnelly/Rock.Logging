@@ -30,7 +30,6 @@ namespace Rock.Logging.Moq
         /// </summary>
         /// <param name="loggingLevel">The logging level of the mock logger.</param>
         public MockLogger(LogLevel loggingLevel)
-            : base(MockBehavior.Strict)
         {
             Setup(loggingLevel);
         }
@@ -38,7 +37,6 @@ namespace Rock.Logging.Moq
         private void Setup(LogLevel loggingLevel)
         {
             Setup(x => x.IsEnabled(It.Is<LogLevel>(level => level >= loggingLevel))).Returns(true);
-            Setup(x => x.IsEnabled(It.Is<LogLevel>(level => level < loggingLevel))).Returns(false);
             Setup(x => x.LogAsync(It.IsAny<ILogEntry>(), It.IsAny<string>(), It.IsAny<string>(), It.IsAny<int>())).Returns(Task.FromResult(0));
         }
 
